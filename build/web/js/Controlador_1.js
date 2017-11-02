@@ -40,6 +40,7 @@ angular.module('todoAp', [])
                 ctrl.malo = function () {
                     ctrl.textoNuevaTarea2 = 'Malo';
                 };
+
                 ctrl.operativo = function () {
                     ctrl.textoNuevaTarea2 = 'Operativo';
                 };
@@ -53,7 +54,9 @@ angular.module('todoAp', [])
                     visibilidad = false;
                 };
 
-
+                 ctrl.cambiarTab2 = function () {
+                   $scope.tab.Codigo = Codigo;
+                };
 
             }]);
  
