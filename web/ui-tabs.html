@@ -413,15 +413,43 @@ Use search to find needed section.
                                                                     <ul class="list-group no-margin">
                                                                         <!-- Without left and right borders, extra small horizontal padding, without background, no border radius -->
                                                                         <li class="list-group-item no-border-hr padding-xs-hr no-bg no-border-radius">
-                                                                            Departamento: <input type="text" class="form-control form-control-sm" placeholder="Departamento">
+                                                                            Departamento:
+                                                                            <select class="form-control" id="jq-validation-select" name="jq-validation-select">
+                                                                                <option value="">Seleccione un departamento</option>
+
+                                                                                <option value="pitons">Lima</option>
+                                                                                <option value="cams">Piura</option>
+                                                                                <option value="nuts">Madre de Dios</option>
+                                                                                <option value="bolts">Loreto</option>
+                                                                                <option value="stoppers">Tacna</option>
+                                                                                <option value="sling">Tingo Maria</option>
+                                                                            </select>
                                                                         </li> <!-- / .list-group-item -->
                                                                         <!-- Without left and right borders, extra small horizontal padding, without background -->
                                                                         <li class="list-group-item no-border-hr padding-xs-hr no-bg">
-                                                                            Provincia: <input type="text" class="form-control form-control-sm" placeholder="Provincia">
+                                                                            Provincia: <select class="form-control" id="jq-validation-select" name="jq-validation-select">
+                                                                                <option value="">Seleccione una provincia</option>
+
+                                                                                <option value="pitons">San Juan de Lurigancho</option>
+                                                                                <option value="cams">Surco</option>
+                                                                                <option value="nuts">La Molina</option>
+                                                                                <option value="bolts">Miraflores</option>
+                                                                                <option value="stoppers">Bella vista</option>
+                                                                                <option value="sling">Jicamarca</option>
+                                                                            </select>
                                                                         </li> <!-- / .list-group-item -->
                                                                         <!-- Without left and right borders, without bottom border, extra small horizontal padding, without background -->
                                                                         <li class="list-group-item no-border-hr no-border-b padding-xs-hr no-bg">
-                                                                            Distrito: <input type="text" class="form-control form-control-sm" placeholder="Distrito">
+                                                                            Distrito:<select class="form-control" id="jq-validation-select" name="jq-validation-select">
+                                                                                <option value="">Seleccione un distrito</option>
+
+                                                                                <option value="pitons">San Juan de Lurigancho</option>
+                                                                                <option value="cams">Surco</option>
+                                                                                <option value="nuts">La Molina</option>
+                                                                                <option value="bolts">Miraflores</option>
+                                                                                <option value="stoppers">Bella vista</option>
+                                                                                <option value="sling">Jicamarca</option>
+                                                                            </select>
                                                                         </li> <!-- / .list-group-item -->
                                                                         <!-- Without left and right borders, without bottom border, extra small horizontal padding, without background -->
                                                                         <li class="list-group-item no-border-hr no-border-b padding-xs-hr no-bg">
@@ -658,7 +686,6 @@ Use search to find needed section.
                                                         <div class="panel">		
                                                             <div class="panel panel-info panel-dark widget-profile">
                                                                 <div class="panel-heading">
-                                                                    <div class="widget-profile-bg-icon"><i class="fa fa-users"></i></div>
 
                                                                     <div class="widget-profile-header">
                                                                         <span>Director</span><br>
@@ -668,9 +695,7 @@ Use search to find needed section.
                                                                 <!-- Success table -->
                                                                 <center>
                                                                     <div class="table-success">
-
-                                                                        <table class="table table-bordered" borde="0">
-
+                                                                        <table class="table table-hover">
                                                                             <tbody>
                                                                                 <tr>
                                                                                     <td><br><center><i class="fa fa-male list-group-icon"></i>Nombre y Apellidos
@@ -705,7 +730,8 @@ Use search to find needed section.
                                                                                     <div class="form-group col-md-12">
                                                                                         <br>
                                                                                         <input type="text" class="form-control form-control-sm" placeholder="Correo">
-                                                                                    </div></td>
+                                                                                    </div>
+                                                                                </td>
 
                                                                                 </tr>
                                                                                 <tr>
@@ -717,7 +743,8 @@ Use search to find needed section.
                                                                                     <div class="form-group col-md-12">
                                                                                         <br>
                                                                                         <input type="tel" class="form-control form-control-sm" placeholder="Teléfono Celular 1">
-                                                                                    </div></td>
+                                                                                    </div>
+                                                                                </td>
                                                                                 </tr>
                                                                                 <tr>
 
@@ -728,7 +755,8 @@ Use search to find needed section.
                                                                                     <div class="form-group col-md-12">
                                                                                         <br>
                                                                                         <input type="tel" class="form-control form-control-sm" placeholder="Teléfono Celular 2">
-                                                                                    </div></td>
+                                                                                    </div>
+                                                                                </td>
                                                                                 </tr>
 
                                                                                 </tbody>
@@ -744,8 +772,6 @@ Use search to find needed section.
                                                         <div class="panel">
                                                             <div  class="panel panel-warning panel-dark  widget-profile ">
                                                                 <div class="panel-heading">
-                                                                    <div class="widget-profile-bg-icon"><i class="fa fa-users"></i></div>
-
                                                                     <div class="widget-profile-header">
                                                                         <span>Jefe de Seguridad</span><br>
 
@@ -755,7 +781,7 @@ Use search to find needed section.
                                                                 <center>
                                                                     <div class="table-success">
 
-                                                                        <table class="table table-bordered" borde="0">
+                                                                        <table class="table table-hover">
 
                                                                             <tbody>
                                                                                 <tr>
@@ -766,10 +792,10 @@ Use search to find needed section.
                                                                                 <div class="form-group col-md-12">
                                                                                     <br>
                                                                                     <select class="form-control" name="jq-validation-jefeseguridad" id="jq-validation-jefeseguridad">
-                                                                                            <option></option>
-                                                                                            <option value="AF">Afghanistan</option>
-                                                                                            <option value="AX">&Aring;land Islands</option>
-                                                                                        </select>
+                                                                                        <option></option>
+                                                                                        <option value="AF">Afghanistan</option>
+                                                                                        <option value="AX">&Aring;land Islands</option>
+                                                                                    </select>
                                                                                 </div>
                                                                             </td>
 
@@ -841,7 +867,7 @@ Use search to find needed section.
                                                                 <center>
                                                                     <div class="table-success">
 
-                                                                        <table class="table table-bordered" borde="0">
+                                                                        <table class="table table-caption">
 
                                                                             <tbody>
                                                                                 <tr>
@@ -851,11 +877,11 @@ Use search to find needed section.
                                                                             <td >
                                                                                 <div class="form-group col-md-12">
                                                                                     <br>
-                                                                                   <select class="form-control" name="jq-validation-alcaide2" id="jq-validation-alcaide2">
-                                                                                            <option></option>
-                                                                                            <option value="AF">Afghanistan</option>
-                                                                                            <option value="AX">&Aring;land Islands</option>
-                                                                                        </select>
+                                                                                    <select class="form-control" name="jq-validation-alcaide2" id="jq-validation-alcaide2">
+                                                                                        <option></option>
+                                                                                        <option value="AF">Afghanistan</option>
+                                                                                        <option value="AX">&Aring;land Islands</option>
+                                                                                    </select>
                                                                                 </div></td>
 
                                                                             </tr>
@@ -944,11 +970,11 @@ Use search to find needed section.
                                                                             <td >
                                                                                 <div class="form-group col-md-12">
                                                                                     <br>
-                                                                                   <select class="form-control" name="jq-validation-subdirector" id="jq-validation-subdirector">
-                                                                                            <option></option>
-                                                                                            <option value="AF">Afghanistan</option>
-                                                                                            <option value="AX">&Aring;land Islands</option>
-                                                                                        </select>
+                                                                                    <select class="form-control" name="jq-validation-subdirector" id="jq-validation-subdirector">
+                                                                                        <option></option>
+                                                                                        <option value="AF">Afghanistan</option>
+                                                                                        <option value="AX">&Aring;land Islands</option>
+                                                                                    </select>
                                                                                 </div></td>
 
                                                                             </tr>
@@ -1029,11 +1055,11 @@ Use search to find needed section.
                                                                             <td >
                                                                                 <div class="form-group col-md-12">
                                                                                     <br>
-                                                                                     <select class="form-control" name="jq-validation-alcaide1" id="jq-validation-alcaide1">
-                                                                                            <option></option>
-                                                                                            <option value="AF">Afghanistan</option>
-                                                                                            <option value="AX">&Aring;land Islands</option>
-                                                                                        </select>
+                                                                                    <select class="form-control" name="jq-validation-alcaide1" id="jq-validation-alcaide1">
+                                                                                        <option></option>
+                                                                                        <option value="AF">Afghanistan</option>
+                                                                                        <option value="AX">&Aring;land Islands</option>
+                                                                                    </select>
                                                                                 </div></td>
 
                                                                             </tr>
@@ -1114,11 +1140,11 @@ Use search to find needed section.
                                                                             <td >
                                                                                 <div class="form-group col-md-12">
                                                                                     <br>
-                                                                                  <select class="form-control" name="jq-validation-alcaide3" id="jq-validation-alcaide3">
-                                                                                            <option></option>
-                                                                                            <option value="AF">Afghanistan</option>
-                                                                                            <option value="AX">&Aring;land Islands</option>
-                                                                                        </select>
+                                                                                    <select class="form-control" name="jq-validation-alcaide3" id="jq-validation-alcaide3">
+                                                                                        <option></option>
+                                                                                        <option value="AF">Afghanistan</option>
+                                                                                        <option value="AX">&Aring;land Islands</option>
+                                                                                    </select>
                                                                                 </div></td>
 
                                                                             </tr>
@@ -1506,28 +1532,28 @@ Use search to find needed section.
     <script src="assets/javascripts/bootstrap.min.js"></script>
     <script src="assets/javascripts/pixel-admin.min.js"></script>
     <script>
-					init.push(function () {
-						$('#jq-validation-director').select2({ allowClear: true, placeholder: 'Elija un Director' }).change(function(){
-							$(this).valid();
-						});
-                                                $('#jq-validation-subdirector').select2({ allowClear: true, placeholder: 'Elija un Subdirector' }).change(function(){
-							$(this).valid();
-						});
-                                                $('#jq-validation-jefeseguridad').select2({ allowClear: true, placeholder: 'Elija un Jefe de Seguridad' }).change(function(){
-							$(this).valid();
-						});
-                                                $('#jq-validation-alcaide1').select2({ allowClear: true, placeholder: 'Elija un Alcaide' }).change(function(){
-							$(this).valid();
-						});
-                                                $('#jq-validation-alcaide2').select2({ allowClear: true, placeholder: 'Elija un Alcaide' }).change(function(){
-							$(this).valid();
-						});
-                                                $('#jq-validation-alcaide3').select2({ allowClear: true, placeholder: 'Elija un Alcaide' }).change(function(){
-							$(this).valid();
-						});
+        init.push(function () {
+            $('#jq-validation-director').select2({allowClear: true, placeholder: 'Elija un Director'}).change(function () {
+                $(this).valid();
+            });
+            $('#jq-validation-subdirector').select2({allowClear: true, placeholder: 'Elija un Subdirector'}).change(function () {
+                $(this).valid();
+            });
+            $('#jq-validation-jefeseguridad').select2({allowClear: true, placeholder: 'Elija un Jefe de Seguridad'}).change(function () {
+                $(this).valid();
+            });
+            $('#jq-validation-alcaide1').select2({allowClear: true, placeholder: 'Elija un Alcaide'}).change(function () {
+                $(this).valid();
+            });
+            $('#jq-validation-alcaide2').select2({allowClear: true, placeholder: 'Elija un Alcaide'}).change(function () {
+                $(this).valid();
+            });
+            $('#jq-validation-alcaide3').select2({allowClear: true, placeholder: 'Elija un Alcaide'}).change(function () {
+                $(this).valid();
+            });
 
-					});
-				</script>
+        });
+    </script>
     <script type="text/javascript">
         init.push(function () {
             // Javascript code here
